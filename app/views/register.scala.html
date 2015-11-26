@@ -1,0 +1,28 @@
+@import helper._
+@main("Edvin Mulabdic"){
+    <div class="container">
+    <div>
+        <h1>Registration</h1>
+        <h3>Please fill the input fields</h3>
+    </div>
+    @helper.form(action = routes.Users.saveUser()){
+    <div>
+        <div>
+            <input name="email" placeholder="Email">
+        </div>
+        <div>
+            <input name="firstname" placeholder="First name">
+        </div>
+        <div>
+            <input name="lastname" placeholder="Last name">
+        </div>
+        <div>
+            <input name="password" placeholder="Password">
+        </div>
+        <div>
+            <button>REGISTER</button>
+        </div>
+    </div>
+    }
+    </div>
+}

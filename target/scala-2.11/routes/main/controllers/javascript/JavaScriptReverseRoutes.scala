@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/edvin.mulabdic/Desktop/Edvin/conf/routes
-// @DATE:Thu Nov 26 16:49:14 CET 2015
+// @SOURCE:E:/blankProject/conf/routes
+// @DATE:Thu Nov 26 23:03:47 CET 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -24,6 +24,16 @@ package controllers.javascript {
 
   
     // @LINE:7
+    def saveUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Users.saveUser",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "saveUser"})
+        }
+      """
+    )
+  
+    // @LINE:9
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Users.login",
       """
@@ -35,7 +45,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:10
+  // @LINE:14
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -43,7 +53,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:14
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -69,6 +79,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"GET", url:"""" + _prefix + """"})
+        }
+      """
+    )
+  
+    // @LINE:8
+    def register: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.register",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "register"})
         }
       """
     )

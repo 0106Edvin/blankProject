@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/edvin.mulabdic/Desktop/Edvin/conf/routes
-// @DATE:Thu Nov 26 16:49:14 CET 2015
+// @SOURCE:E:/blankProject/conf/routes
+// @DATE:Thu Nov 26 23:03:47 CET 2015
 
 package controllers;
 

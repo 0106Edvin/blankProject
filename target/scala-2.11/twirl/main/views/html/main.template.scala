@@ -49,29 +49,21 @@ Seq[Any](format.raw/*2.32*/("""
     </head>
 
      <nav class="navbar navbar-default">
-         <div class="row">
+
              """),_display_(/*20.15*/helper/*20.21*/.form(action = routes.Users.login())/*20.57*/{_display_(Seq[Any](format.raw/*20.58*/("""
-         """),format.raw/*21.10*/("""<div class="col-md-2">
-             First name
-             <input name="firstname">
-         </div>
-         <div class="col-md-6">
-             Last name
-             <input name="lastname">
-         </div>
-             <div class="col-md-3">
-                 <input class="submit-btn" type="submit" value="Register">
-             </div>
-             """)))}),format.raw/*32.15*/("""
-         """),format.raw/*33.10*/("""</div>
-         </nav>
+                 """),format.raw/*21.18*/("""<label>Email</label>
+                 <input name="email">
+                 <label>Password</label>
+                 <input name="password" type="password" >
 
+                 <button>LOGIN</button>
 
-
+             """)))}),format.raw/*28.15*/("""
+         """),format.raw/*29.10*/("""</nav>
 
     <body>
-        """),_display_(/*40.10*/content),format.raw/*40.17*/("""
-    """),format.raw/*41.5*/("""</body>
+        """),_display_(/*32.10*/content),format.raw/*32.17*/("""
+    """),format.raw/*33.5*/("""</body>
 </html>
 """))
       }
@@ -94,11 +86,11 @@ Seq[Any](format.raw/*2.32*/("""
 object main extends main_Scope0.main_Scope1.main
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 26 16:57:15 CET 2015
-                  SOURCE: /Users/edvin.mulabdic/Desktop/Edvin/app/views/main.scala.html
-                  HASH: fd884cbd6b4688c899bc3e4b3188e985d9caf009
-                  MATRIX: 791->18|916->48|943->49|1030->110|1055->115|1143->177|1157->183|1219->224|1330->308|1345->314|1417->364|1469->389|1484->395|1554->444|1675->538|1690->544|1751->583|1803->608|1818->614|1880->655|2037->785|2052->791|2097->827|2136->828|2174->838|2559->1192|2597->1202|2671->1249|2699->1256|2731->1261
-                  LINES: 30->2|35->2|36->3|40->7|40->7|41->8|41->8|41->8|44->11|44->11|44->11|45->12|45->12|45->12|47->14|47->14|47->14|48->15|48->15|48->15|53->20|53->20|53->20|53->20|54->21|65->32|66->33|73->40|73->40|74->41
+                  DATE: Thu Nov 26 23:18:50 CET 2015
+                  SOURCE: E:/blankProject/app/views/main.scala.html
+                  HASH: c90d517d424bcdab952c8c4062f4ea1bc5a8b1f7
+                  MATRIX: 791->19|916->49|944->51|1035->116|1060->121|1149->184|1163->190|1225->231|1339->318|1354->324|1426->374|1479->400|1494->406|1564->455|1687->551|1702->557|1763->596|1816->622|1831->628|1893->669|2029->778|2044->784|2089->820|2128->821|2175->840|2427->1061|2466->1072|2524->1103|2552->1110|2585->1116
+                  LINES: 30->2|35->2|36->3|40->7|40->7|41->8|41->8|41->8|44->11|44->11|44->11|45->12|45->12|45->12|47->14|47->14|47->14|48->15|48->15|48->15|53->20|53->20|53->20|53->20|54->21|61->28|62->29|65->32|65->32|66->33
                   -- GENERATED --
               */
           

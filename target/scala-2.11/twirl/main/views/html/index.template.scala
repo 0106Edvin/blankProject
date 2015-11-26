@@ -21,27 +21,26 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[String,play.twirl.api.HtmlFormat.Appendable] {
+class index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(message: String):play.twirl.api.HtmlFormat.Appendable = {
+  def apply():play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.19*/("""
+Seq[Any](_display_(/*2.2*/main("Edvin Mulabdic")/*2.24*/ {_display_(Seq[Any](format.raw/*2.26*/("""
 
-"""),_display_(/*3.2*/main("Edvin Mulabdic")/*3.24*/ {_display_(Seq[Any](format.raw/*3.26*/("""
-
+    """),format.raw/*4.5*/("""<h1>WELCOME</h1>
 """)))}),format.raw/*5.2*/("""
 """))
       }
     }
   }
 
-  def render(message:String): play.twirl.api.HtmlFormat.Appendable = apply(message)
+  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
 
-  def f:((String) => play.twirl.api.HtmlFormat.Appendable) = (message) => apply(message)
+  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
 
   def ref: this.type = this
 
@@ -54,11 +53,11 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 26 16:49:09 CET 2015
-                  SOURCE: /Users/edvin.mulabdic/Desktop/Edvin/app/views/index.scala.html
-                  HASH: a50b046011133bb8fdce2dd9911661124781816a
-                  MATRIX: 745->1|857->18|885->21|915->43|954->45|986->48
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5
+                  DATE: Thu Nov 26 22:52:47 CET 2015
+                  SOURCE: E:/blankProject/app/views/index.scala.html
+                  HASH: abe8453f3c1c2e9ef36e9bfe5537a677fbaa9162
+                  MATRIX: 827->3|857->25|896->27|930->35|978->54
+                  LINES: 32->2|32->2|32->2|34->4|35->5
                   -- GENERATED --
               */
           
